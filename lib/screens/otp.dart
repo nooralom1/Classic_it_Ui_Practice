@@ -12,23 +12,23 @@ class _OtpPageState extends State<OtpPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: Icon(Icons.keyboard_arrow_left),
+        leading: const Icon(Icons.keyboard_arrow_left),
       ),
       body: Column(
         children: [
-          SizedBox(height: 20,),
+          const SizedBox(height: 20,),
           SizedBox(
               height: 100,
               width: 100,
               child: Image.network(
                   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8MzOv_Qe1LRnjKOC21lNXjdFaElgvIs4sWA&s.png")),
-          SizedBox(height: 30,),
-          Text("Enter OTP",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 18),),
-          SizedBox(height: 10,),
-          Text("We have sent the code to"),
-          Text("(+44) 555-0120",style: TextStyle(fontWeight: FontWeight.bold,),),
-          SizedBox(height: 20,),
-          Row(
+          const SizedBox(height: 30,),
+          const Text("Enter OTP",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 18),),
+          const SizedBox(height: 10,),
+          const Text("We have sent the code to"),
+          const Text("(+44) 555-0120",style: TextStyle(fontWeight: FontWeight.bold,),),
+          const SizedBox(height: 20,),
+          const Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               SizedBox(
@@ -56,22 +56,22 @@ class _OtpPageState extends State<OtpPage> {
               ),
             ],
           ),
-          SizedBox(height: 30,),
-          Row(
+          const SizedBox(height: 30,),
+          const Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text("This code will expire in "),
               Text("55 sec",style: TextStyle(color: Colors.cyan,fontWeight: FontWeight.bold),),
             ],
           ),
-          SizedBox(height: 20,),
-          Text("Resent OTP?"),
-          SizedBox(height: 30,),
+          const SizedBox(height: 20,),
+          const Text("Resent OTP?"),
+          const SizedBox(height: 30,),
           SizedBox(
             width: 200,
             child: ElevatedButton(
               style: ElevatedButton.styleFrom(backgroundColor: Colors.cyan),
-                onPressed: (){}, child: Text("Verify",style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),)),
+                onPressed: (){}, child: const Text("Verify",style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),)),
           )
         ],
       ),
